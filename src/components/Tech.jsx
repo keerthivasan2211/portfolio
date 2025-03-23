@@ -1,6 +1,6 @@
 import React from 'react'
 import { RiReactjsLine } from 'react-icons/ri'
-import { FaNodeJs } from 'react-icons/fa'
+import { FaNodeJs, FaCloud } from 'react-icons/fa'
 import { SiMongodb, SiJavascript, SiPython } from 'react-icons/si'
 import { motion } from "framer-motion";
 
@@ -69,6 +69,15 @@ const Tech = () => {
                     className="rounded-3xl border-2 border-neutral-500 p-3.5 flex flex-col items-center">
                     <span className='text-lg font-semibold'>MongoDB</span>
                     <SiMongodb className='text-4xl text-green-500 mt-2' />
+                </motion.div>
+                {/* SaaS Technology */}
+                <motion.div
+                    variants={iconVariants(6)}
+                    initial="initial"
+                    animate="animate"
+                    className="rounded-3xl border-2 border-neutral-500 p-3.5 flex flex-col items-center">
+                    <span className='text-lg font-semibold pl-5 pr-5'>SaaS</span>
+                    <FaCloud className='text-4xl text-gray-500 mt-2' />
                 </motion.div>
             </motion.div>
         </div>

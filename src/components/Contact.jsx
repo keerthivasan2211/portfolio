@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import { CONTACT } from '../constants';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const form = useRef();
@@ -13,10 +15,11 @@ const Contact = () => {
       .sendForm('service_0b1po9f', 'template_2bd6qck', form.current, 'fmyWvPkcUvM5vpcDT')
       .then(
         () => {
-          console.log('SUCCESS!');
+          toast.success('Email sent successfully!');
           e.target.reset();
         },
         (error) => {
+          toast.error('Failed to send email. Please try again.');
           console.log('FAILED...', error.text);
         }
       );
@@ -24,6 +27,7 @@ const Contact = () => {
 
   return (
     <div className='border-b border-neutral-900 pb-20'>
+      <ToastContainer />
       <motion.h2 
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -62,7 +66,7 @@ const Contact = () => {
             <label htmlFor="user_name" className='block text-left ml-1'>Name :</label>
             <motion.input 
               type="text" 
-              name="user_name" 
+              name="from_name" 
               id="user_name" 
               required 
               className='w-full p-2 border border-gray-300 rounded mb-4'
@@ -75,7 +79,7 @@ const Contact = () => {
             <label htmlFor="user_email" className='block text-left ml-1'>Email :</label>
             <motion.input 
               type="email" 
-              name="user_email" 
+              name="from_email" 
               id="user_email" 
               required 
               className='w-full p-2 border border-gray-300 rounded mb-4'

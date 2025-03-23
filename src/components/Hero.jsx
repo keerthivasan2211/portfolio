@@ -11,7 +11,7 @@ const container= (delay) => ({
     }
 })
 import profilePic from "../assets/keerthivasan.jpg"
-import resume from "../assets/125176076_Keerthivasan.pdf"
+import resume from "../assets/Keerthivasan_Resume.pdf"
 const Hero = () => {
   return (
     <div className='border-b border-neutral-100 pb-10 lg:mb-35'>
@@ -23,7 +23,7 @@ const Hero = () => {
                 initial="hidden"
                 animate="visible"
                 className='pt-12 pb-6 text-6xl font-thin tracking-tight lg:mt-24 lg:text-7xl'>
-                    Keerthivasan.S
+                    Keerthivasan S
 
                 </motion.h1>
                 <motion.span variants={container(0.5)}

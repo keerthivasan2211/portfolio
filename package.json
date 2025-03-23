@@ -2,15 +2,12 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://keerthivasan2211.github.io/pf",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-"predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -25,6 +22,7 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-particles": "^2.12.2",
+    "react-toastify": "^10.0.5",
     "tsparticles": "^3.5.0"
   },
   "devDependencies": {
