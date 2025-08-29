@@ -30,89 +30,101 @@ const Tech = () => {
             </motion.h2>
 
             {/* Tech Grid */}
-            <motion.div
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: -100 }}
-                transition={{ duration: 1.5 }}
-                className="grid grid-cols-6 gap-6 justify-items-center max-w-5xl mx-auto">
+            <div className="max-w-6xl mx-auto space-y-8">
+                
+                {/* First Row - 6 logos */}
+                <motion.div
+                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: -100 }}
+                    transition={{ duration: 1.5 }}
+                    className="grid grid-cols-6 gap-6 justify-items-center"
+                >
+                    {/* HTML */}
+                    <motion.div variants={iconVariants(2)} initial="initial" animate="animate"
+                        className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center w-28 h-28">
+                        <span className='text-sm font-semibold'>HTML</span>
+                        <RiHtml5Line className='text-4xl text-orange-500 mt-2' />
+                    </motion.div>
 
-                {/* HTML */}
-                <motion.div variants={iconVariants(2)} initial="initial" animate="animate"
-                    className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center">
-                    <span className='text-lg font-semibold'>HTML</span>
-                    <RiHtml5Line className='text-4xl text-orange-500 mt-2' />
+                    {/* CSS */}
+                    <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate"
+                        className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center w-28 h-28">
+                        <span className='text-sm font-semibold'>CSS</span>
+                        <FaCss3Alt className='text-4xl text-blue-600 mt-2' />
+                    </motion.div>
+
+                    {/* JavaScript */}
+                    <motion.div variants={iconVariants(3)} initial="initial" animate="animate"
+                        className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center w-28 h-28">
+                        <span className='text-sm font-semibold'>JavaScript</span>
+                        <SiJavascript className='text-4xl text-yellow-500 mt-2' />
+                    </motion.div>
+
+                    {/* ReactJS */}
+                    <motion.div variants={iconVariants(3.5)} initial="initial" animate="animate"
+                        className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center w-28 h-28">
+                        <span className='text-sm font-semibold'>ReactJS</span>
+                        <RiReactjsLine className='text-4xl text-blue-500 mt-2' />
+                    </motion.div>
+
+                    {/* NodeJS */}
+                    <motion.div variants={iconVariants(4)} initial="initial" animate="animate"
+                        className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center w-28 h-28">
+                        <span className='text-sm font-semibold'>NodeJS</span>
+                        <FaNodeJs className='text-4xl text-green-500 mt-2' />
+                    </motion.div>
+
+                    {/* Python */}
+                    <motion.div variants={iconVariants(4.5)} initial="initial" animate="animate"
+                        className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center w-28 h-28">
+                        <span className='text-sm font-semibold'>Python</span>
+                        <SiPython className='text-4xl text-blue-500 mt-2' />
+                    </motion.div>
                 </motion.div>
 
-                {/* CSS */}
-                <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate"
-                    className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center">
-                    <span className='text-lg font-semibold'>CSS</span>
-                    <FaCss3Alt className='text-4xl text-blue-600 mt-2' />
-                </motion.div>
+                {/* Second Row - 5 logos */}
+                <motion.div
+                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, x: 100 }}
+                    transition={{ duration: 1.5 }}
+                    className="grid grid-cols-5 gap-6 justify-items-center"
+                >
+                    {/* MongoDB */}
+                    <motion.div variants={iconVariants(5)} initial="initial" animate="animate"
+                        className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center w-28 h-28">
+                        <span className='text-sm font-semibold'>MongoDB</span>
+                        <SiMongodb className='text-4xl text-green-500 mt-2' />
+                    </motion.div>
 
-                {/* JavaScript */}
-                <motion.div variants={iconVariants(3)} initial="initial" animate="animate"
-                    className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center">
-                    <span className='text-lg font-semibold'>JavaScript</span>
-                    <SiJavascript className='text-4xl text-yellow-500 mt-2' />
-                </motion.div>
+                    {/* ASP.NET */}
+                    <motion.div variants={iconVariants(5.5)} initial="initial" animate="animate"
+                        className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center w-28 h-28">
+                        <span className='text-sm font-semibold'>ASP.NET</span>
+                        <SiDotnet className='text-4xl text-purple-600 mt-2' />
+                    </motion.div>
 
-                {/* ReactJS */}
-                <motion.div variants={iconVariants(3.5)} initial="initial" animate="animate"
-                    className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center">
-                    <span className='text-lg font-semibold'>ReactJS</span>
-                    <RiReactjsLine className='text-4xl text-blue-500 mt-2' />
-                </motion.div>
+                    {/* jQuery */}
+                    <motion.div variants={iconVariants(6)} initial="initial" animate="animate"
+                        className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center w-28 h-28">
+                        <span className='text-sm font-semibold'>jQuery</span>
+                        <SiJquery className='text-4xl text-blue-400 mt-2' />
+                    </motion.div>
 
-                {/* NodeJS */}
-                <motion.div variants={iconVariants(4)} initial="initial" animate="animate"
-                    className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center">
-                    <span className='text-lg font-semibold'>NodeJS</span>
-                    <FaNodeJs className='text-4xl text-green-500 mt-2' />
-                </motion.div>
+                    {/* AJAX */}
+                    <motion.div variants={iconVariants(6.5)} initial="initial" animate="animate"
+                        className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center w-28 h-28">
+                        <span className='text-sm font-semibold'>AJAX</span>
+                        <MdHttp className='text-4xl text-gray-600 mt-2' />
+                    </motion.div>
 
-                {/* Python */}
-                <motion.div variants={iconVariants(4.5)} initial="initial" animate="animate"
-                    className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center">
-                    <span className='text-lg font-semibold'>Python</span>
-                    <SiPython className='text-4xl text-blue-500 mt-2' />
+                    {/* SaaS */}
+                    <motion.div variants={iconVariants(7)} initial="initial" animate="animate"
+                        className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center w-28 h-28">
+                        <span className='text-sm font-semibold'>SaaS</span>
+                        <FaCloud className='text-4xl text-gray-500 mt-2' />
+                    </motion.div>
                 </motion.div>
-
-                {/* MongoDB */}
-                <motion.div variants={iconVariants(5)} initial="initial" animate="animate"
-                    className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center col-span-2 sm:col-span-1">
-                    <span className='text-lg font-semibold'>MongoDB</span>
-                    <SiMongodb className='text-4xl text-green-500 mt-2' />
-                </motion.div>
-
-                {/* ASP.NET */}
-                <motion.div variants={iconVariants(5.5)} initial="initial" animate="animate"
-                    className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center">
-                    <span className='text-lg font-semibold'>ASP.NET</span>
-                    <SiDotnet className='text-4xl text-purple-600 mt-2' />
-                </motion.div>
-
-                {/* jQuery */}
-                <motion.div variants={iconVariants(6)} initial="initial" animate="animate"
-                    className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center">
-                    <span className='text-lg font-semibold'>jQuery</span>
-                    <SiJquery className='text-4xl text-blue-400 mt-2' />
-                </motion.div>
-
-                {/* AJAX */}
-                <motion.div variants={iconVariants(6.5)} initial="initial" animate="animate"
-                    className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center">
-                    <span className='text-lg font-semibold'>AJAX</span>
-                    <MdHttp className='text-4xl text-gray-600 mt-2' />
-                </motion.div>
-
-                {/* SaaS */}
-                <motion.div variants={iconVariants(7)} initial="initial" animate="animate"
-                    className="rounded-3xl border-2 border-neutral-500 p-4 flex flex-col items-center">
-                    <span className='text-lg font-semibold'>SaaS</span>
-                    <FaCloud className='text-4xl text-gray-500 mt-2' />
-                </motion.div>
-            </motion.div>
+            </div>
         </div>
     )
 }
