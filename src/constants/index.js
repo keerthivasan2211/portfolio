@@ -12,12 +12,19 @@ export const ABOUT_TEXT = `Full stack development professional with hands-on exp
 
 export const EXPERIENCES = [
   {
-    year: "2024 - Present",
+    year: "2024 - 2025",
     role: "Web Developer Intern",
     company: "Tech vaseegrah",
     description: `I developed and implemented multi-tenancy using the F3 engine for a WooCommerce site, managing functionalities such as printing, holding, tracking, productivity, and dashboard features. Utilizing the MERN stack (MongoDB, Express.js, React.js, Node.js), I built and maintained robust web applications, and integrated Firebase for backend services and real-time data synchronization. Additionally, I designed and managed backend APIs to support various functionalities, and implemented the WhatsApp API to send order status notifications and updates to customers, enhancing communication and customer satisfaction. Furthermore, I developed a recommendation engine module to improve user experience and site functionality by providing personalized suggestions.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"]
   },
+   {
+    year: "2025 - Present",
+    role: "Apprenticeship",
+    company: "Integrated India",
+    description: `I work as an IT Developer at Integrated Enterprises (India) Pvt. Ltd., where I build and maintain internal web applications using HTML, CSS, JavaScript, and C# (.NET). My role involves designing and optimizing SQL databases, creating responsive and user-friendly interfaces, and ensuring secure, reliable software solutions tailored for financial services. I collaborate closely with finance teams to understand business needs, provide technical support, and implement scalable IT solutions that streamline operations and enhance productivity.`,
+   technologies: ["HTML", "CSS", "JavaScript", "SQL", "C# (.NET)"]
+  }
   
   
 ];
