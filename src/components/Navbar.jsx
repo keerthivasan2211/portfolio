@@ -9,7 +9,6 @@ const Navbar = () => {
   return (
     
     <nav className=" mb-15 flex items-center justify-between py-6">
-      <script src="https://js-na2.hsforms.net/forms/embed/245070599.js" defer></script>
 <div class="hs-form-frame" data-region="na2" data-form-id="2f06ea5c-f651-423e-9794-f6cc930a16f0" data-portal-id="245070599"></div>
     <div className='flex flex-shrink-0 items-center'>
       <a className="mx-2 w-10  text-4xl " alt="logo">KV</a>
